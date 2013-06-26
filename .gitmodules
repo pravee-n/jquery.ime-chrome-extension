@@ -1,0 +1,3 @@
+[submodule "libs/jquery.ime"]
+	path = libs/jquery.ime
+	url = git@github.com:pravee-n/jquery.ime.git

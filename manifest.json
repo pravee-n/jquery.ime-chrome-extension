@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+
+	"name": "jQuery.IME Chrome extension",
+	"description": "jQuery.IME extension for Google Chrome",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "images/icon.png",
+	},
+	"background": {
+		"scripts": [
+            "js/background.js"
+        ]
+	},
+	"permissions": [
+	  "tabs", "http://*/*", "https://*/*"
+	],
+	"options_page": "options.html",
+	"content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'",
+	"content_scripts": [ {
+		"js": [ "js/jquery.js", 
+				"js/jquery.ime.js", 
+				"js/jquery.ime.selector.js", 
+				"js/jquery.ime.preferences.js", 
+				"js/jquery.ime.inputmethods.js", 
+				"js/invoke.jquery.ime.js"
+			],
+		"css": [ "css/jquery.ime.css"],
+		"matches": ["http://*/*", "https://*/*"]
+	}],
+	"web_accessible_resources": [
+	    "images/ime-active.png",
+	    "images/tick.png"
+  	]
+}
