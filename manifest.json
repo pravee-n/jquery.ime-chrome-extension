@@ -20,7 +20,7 @@
 	"content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'",
 	"content_scripts": [ {
 		"js": [ "src/jquery.js", 
-				"libs/jquery.ime/src/jquery.ime.js", 
+				"libs/jquery.ime/src/jquery.ime.js",
 				"libs/jquery.ime/src/jquery.ime.selector.js", 
 				"libs/jquery.ime/src/jquery.ime.preferences.js", 
 				"libs/jquery.ime/src/jquery.ime.inputmethods.js", 
@@ -31,6 +31,10 @@
 	}],
 	"web_accessible_resources": [
 	    "libs/jquery.ime/images/ime-active.png",
-	    "libs/jquery.ime/images/tick.png"
+	    "libs/jquery.ime/images/ime-active.svg",
+	    "libs/jquery.ime/images/ime-inactive.png",
+	    "libs/jquery.ime/images/ime-inactive.svg",
+	    "libs/jquery.ime/images/tick.png",
+	    "libs/jquery.ime/images/tick.svg"
   	]
 }
