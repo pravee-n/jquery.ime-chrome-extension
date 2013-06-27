@@ -19,14 +19,29 @@
 	"options_page": "options.html",
 	"content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'",
 	"content_scripts": [ {
-		"js": [ "src/jquery.js", 
+		
+		"js": [ "src/jquery.js",
 				"libs/jquery.ime/src/jquery.ime.js",
-				"libs/jquery.ime/src/jquery.ime.selector.js", 
-				"libs/jquery.ime/src/jquery.ime.preferences.js", 
-				"libs/jquery.ime/src/jquery.ime.inputmethods.js", 
-				"src/invoke.jquery.ime.js"
+				"libs/jquery.ime/src/jquery.ime.selector.js",
+				"libs/jquery.ime/src/jquery.ime.preferences.js",
+				"libs/jquery.ime/src/jquery.ime.inputmethods.js",
+				"src/invoke.jquery.ime.js",
+				
+				"libs/jquery.uls/src/jquery.uls.data.js",
+				"libs/jquery.uls/src/jquery.uls.data.utils.js",
+				"libs/jquery.uls/src/jquery.uls.lcd.js",
+				"libs/jquery.uls/src/jquery.uls.languagefilter.js",
+				"libs/jquery.uls/src/jquery.uls.regionfilter.js",
+				"libs/jquery.uls/src/jquery.uls.core.js",
+
+				"src/content.js"
 			],
-		"css": [ "libs/jquery.ime/css/jquery.ime.css"],
+
+		"css": [ "libs/jquery.ime/css/jquery.ime.css",
+				 "libs/jquery.uls/css/jquery.uls.css",
+				 "libs/jquery.uls/css/jquery.uls.grid.css",
+				 "libs/jquery.uls/css/jquery.uls.lcd.css"
+			],
 		"matches": ["http://*/*", "https://*/*"]
 	}],
 	"web_accessible_resources": [

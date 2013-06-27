@@ -1,1 +1,1 @@
-$( 'textarea, input[type=text]' ).ime();
+// $( 'textarea, input[type=text]' ).ime();
