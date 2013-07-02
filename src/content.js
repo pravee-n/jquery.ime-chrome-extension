@@ -1,5 +1,4 @@
 $( document ).ready( function () {
-alert("hi")
 	// Extend the ime preference system
 	$.extend( $.ime.preferences, {
 
@@ -16,7 +15,6 @@ alert("hi")
 	
 	function quickList() {
 		var unique = [ $( 'html' ).attr( 'lang' ) || 'en' ],
-			imeLanguageList,
 			previousIMELanguages;
 
 		previousIMELanguages =  $.ime.preferences.getPreviousLanguages() || [];
@@ -36,7 +34,6 @@ alert("hi")
 		for ( language in $.ime.languages ) {
 			availableLanguages[language] = $.ime.languages[language].autonym;
 		}
-
 		return availableLanguages;
 	};
 	
@@ -45,7 +42,7 @@ alert("hi")
 	
 	$( 'body' ).on( 'focus.ime', 'input:not([type]), input[type=text], input[type=search], textarea', function () {
 		var $input = $( this );
-			$input.ime( {
+		$input.ime( {
 			languages: quickList(),
 			languageSelector: function () {
 				var $ulsTrigger;
@@ -59,13 +56,13 @@ alert("hi")
 						$input.focus();
 					},
 					lazyload: false,
-					languages: availableLanguages(),
-					top: $input.offset().top,
-					left: $input.offset().left
+					languages: availableLanguages()
+					// top: $( window ).height()/2 - 214,
+					// left: $( window ).width()/2 - 358
 				} );
 	
 				return $ulsTrigger;
 			}
-			} );
+		} );
 	} );
 } );

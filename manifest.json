@@ -42,6 +42,7 @@
 				 "libs/jquery.uls/css/jquery.uls.grid.css",
 				 "libs/jquery.uls/css/jquery.uls.lcd.css"
 			],
+
 		"matches": ["http://*/*", "https://*/*"]
 	}],
 	"web_accessible_resources": [
@@ -50,6 +51,18 @@
 	    "libs/jquery.ime/images/ime-inactive.png",
 	    "libs/jquery.ime/images/ime-inactive.svg",
 	    "libs/jquery.ime/images/tick.png",
-	    "libs/jquery.ime/images/tick.svg"
+	    "libs/jquery.ime/images/tick.svg",
+	    
+	    "libs/jquery.uls/images/icon-language.png",
+	    "libs/jquery.uls/images/icon-language.svg",
+	    "libs/jquery.uls/images/world_map.png",
+	    "libs/jquery.uls/images/world_map.svg",
+	    "libs/jquery.uls/images/close.png",
+	    "libs/jquery.uls/images/close.svg",
+	    "libs/jquery.uls/images/search.png",
+	    "libs/jquery.uls/images/search.svg",
+	    "libs/jquery.uls/images/clear.png",
+	    "libs/jquery.uls/images/clear.svg"
+
   	]
 }
