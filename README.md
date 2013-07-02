@@ -11,7 +11,14 @@ Get the source code
 Clone the repository:
 
 	https://github.com/pravee-n/jquery.ime-chrome-extension.git
-Or you can download the code as zip also.
+
+After cloning the repository, you need to run the following commmands
+	
+	git submodule init
+	git submodule update
+
+It would include the jQuery.IME and jQuery.ULS libraries in the extension.
+
 
 Installation on Google Chrome
 -----------------------------
