@@ -1,9 +1,9 @@
 var runtimeOrExtension = chrome.runtime && chrome.runtime.sendMessage ? 'runtime' : 'extension';
-var languageRulesPath = "libs/jquery.ime/";
+var imeLanguageRulesPath = "libs/jquery.ime/";
 
 chrome[runtimeOrExtension].onMessage.addListener( function( request, sender, sendResponse ) {
 	if ( request.fileToInject !== undefined ) {
-		chrome.tabs.executeScript( null, {file: languageRulesPath + request.fileToInject}, function () {
+		chrome.tabs.executeScript( null, {file: imeLanguageRulesPath + request.fileToInject}, function () {
 			sendResponse( { "injected": true } );    	
 		});
 	}

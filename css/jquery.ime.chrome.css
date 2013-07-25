@@ -2,6 +2,9 @@
 	position: absolute;
 	/* @embed */
 	background: url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/ime-active.png') no-repeat left center;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/ime-active.svg');
+	background-image: -moz-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/ime-active.svg');
+	background-image: linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/ime-active.svg');
 	background-color: rgba(255,255,255,0.75);
 	background-position: left 3px center;
 	height: 15px;
@@ -15,7 +18,15 @@
 	z-index: 9999;
 }
 
+.imeselector a,
+.ime-disable {
+	color: #222222 !important;
+}
+
 .imeselector-menu .ime-checked {
 	/* @embed */
 	background: url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/tick.png') left 4px center no-repeat;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/tick.svg');
+	background-image: -moz-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/tick.svg');
+	background-image: linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/tick.svg');
 }

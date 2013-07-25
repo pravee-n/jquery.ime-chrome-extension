@@ -1,0 +1,39 @@
+.uls-trigger {
+	/* @embed */
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/icon-language.png') no-repeat scroll left center;
+	padding-left: 30px;
+}
+
+.uls-worldmap {
+	/* @embed */
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/world_map.png') no-repeat scroll right top;
+	background-size: 100%;
+}
+
+.uls-icon-close {
+	/* @embed */
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.png') no-repeat scroll center center;
+	float: right;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.uls-menu .uls-search-label {
+	/* @embed */
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.png') no-repeat scroll right center;
+	background-size: 30px;
+	height: 32px;
+	width: 32px;
+	float: right;
+}
+
+.uls-menu .uls-languagefilter-clear {
+	/* @embed */
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/clear.png') no-repeat scroll left center;
+	cursor: pointer;
+	height: 32px;
+	position: absolute;
+	width: 32px;
+	margin-left: -32px;
+}
+

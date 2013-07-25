@@ -19,6 +19,14 @@
 	"options_page": "options.html",
 	"content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'",
 	"content_scripts": [ {
+
+		"css": [ "libs/jquery.ime/css/jquery.ime.css",
+				 "libs/jquery.uls/css/jquery.uls.lcd.css",
+				 "libs/jquery.uls/css/jquery.uls.grid.css",
+				 "libs/jquery.uls/css/jquery.uls.css",
+				 "css/jquery.ime.chrome.css",
+				 "css/jquery.uls.chrome.css"
+			],
 		
 		"js": [ "src/jquery.js",
 				"libs/jquery.ime/src/jquery.ime.js",
@@ -35,12 +43,6 @@
 				"libs/jquery.uls/src/jquery.uls.core.js",
 
 				"src/content.js"
-			],
-
-		"css": [ "libs/jquery.ime/css/jquery.ime.css",
-				 "libs/jquery.uls/css/jquery.uls.css",
-				 "libs/jquery.uls/css/jquery.uls.grid.css",
-				 "libs/jquery.uls/css/jquery.uls.lcd.css"
 			],
 
 		"matches": ["http://*/*", "https://*/*"]
