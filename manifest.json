@@ -33,7 +33,6 @@
 				"libs/jquery.ime/src/jquery.ime.selector.js",
 				"libs/jquery.ime/src/jquery.ime.preferences.js",
 				"libs/jquery.ime/src/jquery.ime.inputmethods.js",
-				"src/invoke.jquery.ime.js",
 				
 				"libs/jquery.uls/src/jquery.uls.data.js",
 				"libs/jquery.uls/src/jquery.uls.data.utils.js",
@@ -42,7 +41,7 @@
 				"libs/jquery.uls/src/jquery.uls.regionfilter.js",
 				"libs/jquery.uls/src/jquery.uls.core.js",
 
-				"src/content.js"
+				"src/jquery.ime.init.js"
 			],
 
 		"matches": ["http://*/*", "https://*/*"]
