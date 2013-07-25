@@ -62,6 +62,18 @@ $( document ).ready( function () {
 				} );
 	
 				return $ulsTrigger;
+			},
+			helpHandler: function ( ime ) {
+				return $( '<a>' )
+					.attr( {
+						href: 'https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:UniversalLanguageSelector/Input_methods/$1'.replace( '$1', ime ),
+						target: '_blank',
+						title: 'How to use'
+					} )
+					.addClass( 'ime-perime-help' )
+					.click( function ( event ) {
+						event.stopPropagation();
+					} );
 			}
 		} );
 

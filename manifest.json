@@ -63,7 +63,9 @@
 	    "libs/jquery.uls/images/search.png",
 	    "libs/jquery.uls/images/search.svg",
 	    "libs/jquery.uls/images/clear.png",
-	    "libs/jquery.uls/images/clear.svg"
+	    "libs/jquery.uls/images/clear.svg",
+
+	    "images/help.png"
 
   	]
 }

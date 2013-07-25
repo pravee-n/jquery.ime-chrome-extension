@@ -30,3 +30,26 @@
 	background-image: -moz-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/tick.svg');
 	background-image: linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.ime/images/tick.svg');
 }
+
+/* Ime menu customizations */
+.ime-perime-help {
+	display: none;
+}
+
+.ime-checked .ime-perime-help {
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.75;
+	padding: 0;
+	/* @embed */
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/images/help.png') left center no-repeat;
+}
+
+.ime-checked .ime-perime-help:hover {
+	opacity: 1;
+}
