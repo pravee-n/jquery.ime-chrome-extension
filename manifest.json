@@ -17,7 +17,6 @@
 		"tabs", "http://*/*", "https://*/*"
 	],
 	"options_page": "options.html",
-	"content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'",
 
 	"content_scripts": [ {
 		"css": [
