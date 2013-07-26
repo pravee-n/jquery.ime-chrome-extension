@@ -2,8 +2,8 @@ $( document ).ready( function () {
 	// Extend the ime preference system
 	$.extend( $.ime.preferences, {
 
-		save: function ( ) {
-			localStorage.setItem( 'imepreferences', JSON.stringify(this.registry) );
+		save: function () {
+			localStorage.setItem( 'imepreferences', JSON.stringify( this.registry ) );
 		},
 
 		load: function () {
@@ -17,7 +17,7 @@ $( document ).ready( function () {
 		var unique = [ $( 'html' ).attr( 'lang' ) || 'en' ],
 			previousIMELanguages;
 
-		previousIMELanguages =  $.ime.preferences.getPreviousLanguages() || [];
+		previousIMELanguages = $.ime.preferences.getPreviousLanguages() || [];
 		$.each( previousIMELanguages, function ( i, v ) {
 			if ( $.inArray( v, unique ) === -1 ) {
 				unique.push( v );
@@ -98,7 +98,7 @@ $( document ).ready( function () {
 			// From version 26 onwards it is implemented using chrome.runtime.sendmessage.
 			runtimeOrExtension = chrome.runtime && chrome.runtime.sendMessage ? 'runtime' : 'extension';
 
-			chrome[runtimeOrExtension].sendMessage( {fileToInject: $.ime.sources[inputmethodId].source}, function ( response ) {
+			chrome[runtimeOrExtension].sendMessage( { fileToInject: $.ime.sources[inputmethodId].source }, function ( response ) {
 				if ( response.injected ) {
 					console.log( inputmethodId + ' loaded.' );
 					deferred.resolve();

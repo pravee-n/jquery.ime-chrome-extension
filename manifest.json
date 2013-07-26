@@ -10,62 +10,64 @@
 	},
 	"background": {
 		"scripts": [
-            "src/background.js"
-        ]
+			"src/background.js"
+		]
 	},
 	"permissions": [
-	  "tabs", "http://*/*", "https://*/*"
+		"tabs", "http://*/*", "https://*/*"
 	],
 	"options_page": "options.html",
 	"content_security_policy": "default-src 'self'; style-src 'self'; script-src 'self' 'unsafe-eval'",
+
 	"content_scripts": [ {
+		"css": [
+			"libs/jquery.ime/css/jquery.ime.css",
+			"libs/jquery.uls/css/jquery.uls.lcd.css",
+			"libs/jquery.uls/css/jquery.uls.grid.css",
+			"libs/jquery.uls/css/jquery.uls.css",
+			"css/jquery.ime.chrome.css",
+			"css/jquery.uls.chrome.css"
+		],
 
-		"css": [ "libs/jquery.ime/css/jquery.ime.css",
-				 "libs/jquery.uls/css/jquery.uls.lcd.css",
-				 "libs/jquery.uls/css/jquery.uls.grid.css",
-				 "libs/jquery.uls/css/jquery.uls.css",
-				 "css/jquery.ime.chrome.css",
-				 "css/jquery.uls.chrome.css"
-			],
-		
-		"js": [ "src/jquery.js",
-				"libs/jquery.ime/src/jquery.ime.js",
-				"libs/jquery.ime/src/jquery.ime.selector.js",
-				"libs/jquery.ime/src/jquery.ime.preferences.js",
-				"libs/jquery.ime/src/jquery.ime.inputmethods.js",
-				
-				"libs/jquery.uls/src/jquery.uls.data.js",
-				"libs/jquery.uls/src/jquery.uls.data.utils.js",
-				"libs/jquery.uls/src/jquery.uls.lcd.js",
-				"libs/jquery.uls/src/jquery.uls.languagefilter.js",
-				"libs/jquery.uls/src/jquery.uls.regionfilter.js",
-				"libs/jquery.uls/src/jquery.uls.core.js",
+		"js": [
+			"src/jquery.js",
+			"libs/jquery.ime/src/jquery.ime.js",
+			"libs/jquery.ime/src/jquery.ime.selector.js",
+			"libs/jquery.ime/src/jquery.ime.preferences.js",
+			"libs/jquery.ime/src/jquery.ime.inputmethods.js",
 
-				"src/jquery.ime.init.js"
-			],
+			"libs/jquery.uls/src/jquery.uls.data.js",
+			"libs/jquery.uls/src/jquery.uls.data.utils.js",
+			"libs/jquery.uls/src/jquery.uls.lcd.js",
+			"libs/jquery.uls/src/jquery.uls.languagefilter.js",
+			"libs/jquery.uls/src/jquery.uls.regionfilter.js",
+			"libs/jquery.uls/src/jquery.uls.core.js",
+
+			"src/jquery.ime.init.js"
+		],
 
 		"matches": ["http://*/*", "https://*/*"]
 	}],
+
 	"web_accessible_resources": [
-	    "libs/jquery.ime/images/ime-active.png",
-	    "libs/jquery.ime/images/ime-active.svg",
-	    "libs/jquery.ime/images/ime-inactive.png",
-	    "libs/jquery.ime/images/ime-inactive.svg",
-	    "libs/jquery.ime/images/tick.png",
-	    "libs/jquery.ime/images/tick.svg",
-	    
-	    "libs/jquery.uls/images/icon-language.png",
-	    "libs/jquery.uls/images/icon-language.svg",
-	    "libs/jquery.uls/images/world_map.png",
-	    "libs/jquery.uls/images/world_map.svg",
-	    "libs/jquery.uls/images/close.png",
-	    "libs/jquery.uls/images/close.svg",
-	    "libs/jquery.uls/images/search.png",
-	    "libs/jquery.uls/images/search.svg",
-	    "libs/jquery.uls/images/clear.png",
-	    "libs/jquery.uls/images/clear.svg",
+		"libs/jquery.ime/images/ime-active.png",
+		"libs/jquery.ime/images/ime-active.svg",
+		"libs/jquery.ime/images/ime-inactive.png",
+		"libs/jquery.ime/images/ime-inactive.svg",
+		"libs/jquery.ime/images/tick.png",
+		"libs/jquery.ime/images/tick.svg",
 
-	    "images/help.png"
+		"libs/jquery.uls/images/icon-language.png",
+		"libs/jquery.uls/images/icon-language.svg",
+		"libs/jquery.uls/images/world_map.png",
+		"libs/jquery.uls/images/world_map.svg",
+		"libs/jquery.uls/images/close.png",
+		"libs/jquery.uls/images/close.svg",
+		"libs/jquery.uls/images/search.png",
+		"libs/jquery.uls/images/search.svg",
+		"libs/jquery.uls/images/clear.png",
+		"libs/jquery.uls/images/clear.svg",
 
-  	]
+		"images/help.png"
+	]
 }
