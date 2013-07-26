@@ -3,7 +3,7 @@ $( document ).ready( function () {
 	$.extend( $.ime.preferences, {
 
 		save: function ( ) {
-			localStorage.setItem("imepreferences", JSON.stringify(this.registry) );
+			localStorage.setItem( 'imepreferences', JSON.stringify(this.registry) );
 		},
 
 		load: function () {
@@ -100,7 +100,7 @@ $( document ).ready( function () {
 
 			chrome[runtimeOrExtension].sendMessage( {fileToInject: $.ime.sources[inputmethodId].source}, function ( response ) {
 				if ( response.injected ) {
-					console.log( inputmethodId + " loaded." );
+					console.log( inputmethodId + ' loaded.' );
 					deferred.resolve();
 				}
 				else {
