@@ -14,7 +14,8 @@
 		]
 	},
 	"permissions": [
-		"tabs", "http://*/*", "https://*/*"
+		"tabs", "http://*/*", "https://*/*",
+		"storage"
 	],
 	"options_page": "options.html",
 
