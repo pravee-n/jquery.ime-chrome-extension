@@ -25,10 +25,10 @@
 
 			"libs/jquery.uls/css/jquery.uls.css",
 			"libs/jquery.uls/css/jquery.uls.grid.css",
-			"libs/jquery.uls/css/jquery.uls.lcd.css"
+			"libs/jquery.uls/css/jquery.uls.lcd.css",
 
 			"css/jquery.ime.chrome.css",
-			"css/jquery.uls.chrome.css",
+			"css/jquery.uls.chrome.css"
 		],
 
 		"js": [
