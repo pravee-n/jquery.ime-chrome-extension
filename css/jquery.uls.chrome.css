@@ -1,38 +1,39 @@
+/* Need to remove all the !important hacks */
 .uls-trigger {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/icon-language.png') no-repeat scroll left center;
-	padding-left: 30px;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/icon-language.png') no-repeat scroll left center !important;
+	padding-left: 30px !important;
 }
 
 .uls-worldmap {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/world_map.png') no-repeat scroll right top;
-	background-size: 100%;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/world_map.png') no-repeat scroll right top !important;
+	background-size: 100% !important;
 }
 
 .uls-icon-close {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.png') no-repeat scroll center center;
-	float: right;
-	padding: 15px;
-	cursor: pointer;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.png') no-repeat scroll center center !important;
+	float: right !important;
+	padding: 15px !important;
+	cursor: pointer !important;
 }
 
 .uls-menu .uls-search-label {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.png') no-repeat scroll right center;
-	background-size: 30px;
-	height: 32px;
-	width: 32px;
-	float: right;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.png') no-repeat scroll right center !important;
+	background-size: 30px !important;
+	height: 32px !important;
+	width: 32px !important;
+	float: right !important;
 }
 
 .uls-menu .uls-languagefilter-clear {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/clear.png') no-repeat scroll left center;
-	cursor: pointer;
-	height: 32px;
-	position: absolute;
-	width: 32px;
-	margin-left: -32px;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/clear.png') no-repeat scroll left center !important;
+	cursor: pointer !important;
+	height: 32px !important;
+	position: absolute !important;
+	width: 32px !important;
+	margin-left: -32px !important;
 }
