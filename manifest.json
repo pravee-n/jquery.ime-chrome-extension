@@ -21,12 +21,12 @@
 
 	"content_scripts": [ {
 		"css": [
+			"css/jquery.ime.chrome.css",
+			"css/jquery.uls.chrome.css",
 			"libs/jquery.ime/css/jquery.ime.css",
 			"libs/jquery.uls/css/jquery.uls.lcd.css",
 			"libs/jquery.uls/css/jquery.uls.grid.css",
-			"libs/jquery.uls/css/jquery.uls.css",
-			"css/jquery.ime.chrome.css",
-			"css/jquery.uls.chrome.css"
+			"libs/jquery.uls/css/jquery.uls.css"
 		],
 
 		"js": [

@@ -9,7 +9,9 @@ $( document ).ready( function () {
 		load: function () {
 			var imePreferences = this;
 			chrome.storage.local.get( ['imepreferences'], function ( result ) {
-				imePreferences.registry = JSON.parse( result.imepreferences ) || imePreferences.registry;
+				if ( result.imepreferences !== undefined ) {
+					imePreferences.registry = JSON.parse( result.imepreferences ) || imePreferences.registry;
+				}
 				initializeIME();
 			} );
 		}
