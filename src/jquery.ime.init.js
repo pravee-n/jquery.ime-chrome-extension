@@ -62,8 +62,8 @@ $( document ).ready( function () {
 							$input.focus();
 						},
 						lazyload: false,
-						languages: availableLanguages()
-						// top: $( window ).height()/2 - 214,
+						languages: availableLanguages(),
+						top: $input.offset().top,
 						// left: $( window ).width()/2 - 358
 					} );
 		
