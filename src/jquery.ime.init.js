@@ -46,7 +46,7 @@ $( document ).ready( function () {
 	$.ime.preferences.load();
 	
 	function initializeIME() {
-		$( 'body' ).on( 'focus.ime', 'input:not([type]), input[type=text], input[type=search], textarea', function () {
+		$( 'body' ).on( 'focus.ime', 'input:not([type]), input[type=text], input[type=search], textarea, [contenteditable]', function () {
 			var $input = $( this );
 			$input.ime( {
 				languages: quickList(),
