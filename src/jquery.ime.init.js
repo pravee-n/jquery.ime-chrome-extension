@@ -46,7 +46,7 @@ $( document ).ready( function () {
 	$.ime.preferences.load();
 	
 	function initializeIME() {
-		$( 'body' ).on( 'focus.ime', 'input:not([type]), input[type=text], input[type=search], textarea, [contenteditable]', function () {
+		$( 'body' ).on( 'focus.ime', 'input:not([type]), input[type=text], input[type=search], textarea', function () {
 			var $input = $( this );
 			$input.ime( {
 				languages: quickList(),
@@ -63,8 +63,9 @@ $( document ).ready( function () {
 						},
 						lazyload: false,
 						languages: availableLanguages(),
-						top: $input.offset().top,
-						// left: $( window ).width()/2 - 358
+						// top: $input.offset().top,
+						top: $( window ).height()/2 - 214,
+						left: $( window ).width()/2 - 358
 					} );
 		
 					return $ulsTrigger;
