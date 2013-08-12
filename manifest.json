@@ -33,6 +33,7 @@
 
 		"js": [
 			"src/jquery.js",
+			"libs/jquery.ime/libs/rangy/rangy-core.js",
 			"libs/jquery.ime/src/jquery.ime.js",
 			"libs/jquery.ime/src/jquery.ime.selector.js",
 			"libs/jquery.ime/src/jquery.ime.preferences.js",
