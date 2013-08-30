@@ -22,6 +22,7 @@
 .imeselector a,
 .ime-disable {
 	color: #222222 !important;
+	text-decoration: none !important;
 }
 
 .imeselector-menu .ime-checked {

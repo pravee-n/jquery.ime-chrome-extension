@@ -8,7 +8,7 @@
 
 	"name": "Wikimedia Input Tools",
 	"description": "Wikimedia Input Tools allows you to type in your native language from among 150+ languages.",
-	"version": "1.0",
+	"version": "0.1",
 
 	"icons": { 
 		"16": "images/icon_16.png",
