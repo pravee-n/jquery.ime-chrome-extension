@@ -1,13 +1,21 @@
 {
 	"manifest_version": 2,
 
-	"name": "jQuery.IME Chrome extension",
-	"description": "jQuery.IME extension for Google Chrome",
+	"author": [ {
+		"email": "prageck@gmail.com",
+		"name": "Praveen Singh"
+	} ],
+
+	"name": "Wikimedia Input Tools",
+	"description": "Wikimedia Input Tools allows you to type in your native language from among 150+ languages.",
 	"version": "1.0",
 
-	"browser_action": {
-		"default_icon": "images/icon.png"
+	"icons": { 
+		"16": "images/icon_16.png",
+		"48": "images/icon_48.png",
+		"128": "images/icon_128.png"
 	},
+
 	"background": {
 		"scripts": [
 			"src/background.js"
