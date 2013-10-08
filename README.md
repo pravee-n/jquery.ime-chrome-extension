@@ -6,6 +6,13 @@ A Google Chrome browser extension for jquery.ime input method library.
 jQuery.IME is an input method editor library that currently supports more than 150 input methods. It is the jQuery 
 version of the input method tool used in Wikimedia projects, a.k.a. Narayam.
 
+
+Download the extension from Chrome Webstore
+-------------------
+
+https://chrome.google.com/webstore/detail/wikimedia-input-tools/fjnfifedbeeeibikgpggddmfbaeccaoh
+
+
 Get the source code
 -------------------
 Clone the repository:
