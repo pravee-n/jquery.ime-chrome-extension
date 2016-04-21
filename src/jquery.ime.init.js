@@ -31,7 +31,7 @@ $( document ).ready( function () {
 
 		return unique.slice( 0, 6 );
 	}
-	
+
 	function availableLanguages() {
 		var language,
 			availableLanguages = {};
@@ -41,10 +41,10 @@ $( document ).ready( function () {
 		}
 		return availableLanguages;
 	};
-	
+
 	// Load the ime preferences
 	$.ime.preferences.load();
-	
+
 	function initializeIME() {
 		// initialize rangy incase document.ready has already been fired
 		rangy.init();
@@ -54,7 +54,7 @@ $( document ).ready( function () {
 				languages: quickList(),
 				languageSelector: function () {
 					var $ulsTrigger;
-		
+
 					$ulsTrigger = $( '<a>' ).text( '...' )
 						.addClass( 'ime-selector-more-languages selectable-row selectable-row-item' );
 
@@ -64,12 +64,12 @@ $( document ).ready( function () {
 							$input.focus();
 						},
 						lazyload: false,
-						languages: availableLanguages(),
+						//languages: availableLanguages(),
 						// top: $input.offset().top,
-						top: $( window ).height()/2 - 214,
+						top: $( window ).height()/2 - 150,
 						left: $( window ).width()/2 - 358
 					} );
-		
+
 					return $ulsTrigger;
 				},
 				helpHandler: function ( ime ) {
@@ -102,8 +102,8 @@ $( document ).ready( function () {
 				}
 
 				// Determining which method the Google chrome is using.
-				// Until chrome version 25 message passing between content scripts and 
-				// extension scripts was implemented using chrome.extension.sendmessage. 
+				// Until chrome version 25 message passing between content scripts and
+				// extension scripts was implemented using chrome.extension.sendmessage.
 				// From version 26 onwards it is implemented using chrome.runtime.sendmessage.
 				runtimeOrExtension = chrome.runtime && chrome.runtime.sendMessage ? 'runtime' : 'extension';
 

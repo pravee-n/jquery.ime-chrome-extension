@@ -1,39 +1,31 @@
-/* Need to remove all the !important hacks */
-.uls-trigger {
-	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/icon-language.png') no-repeat scroll left center !important;
-	padding-left: 30px !important;
-}
-
-.uls-worldmap {
-	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/world_map.png') no-repeat scroll right top !important;
-	background-size: 100% !important;
-}
-
 .uls-icon-close {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.png') no-repeat scroll center center !important;
-	float: right !important;
-	padding: 15px !important;
-	cursor: pointer !important;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.png') no-repeat scroll center center;
+	/* @embed */
+	background-image: -webkit-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.svg');
+	/* @embed */
+	background-image: linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/close.svg');
 }
 
 .uls-menu .uls-search-label {
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.png') no-repeat scroll right center;
+	background-image: -webkit-linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.svg');
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.png') no-repeat scroll right center !important;
-	background-size: 30px !important;
-	height: 32px !important;
-	width: 32px !important;
-	float: right !important;
+	background-image: linear-gradient(transparent, transparent), url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/search.svg');
+	background-position: center center;
 }
 
 .uls-menu .uls-languagefilter-clear {
 	/* @embed */
-	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/clear.png') no-repeat scroll left center !important;
-	cursor: pointer !important;
-	height: 32px !important;
-	position: absolute !important;
-	width: 32px !important;
-	margin-left: -32px !important;
+	background: transparent url('chrome-extension://__MSG_@@extension_id__/libs/jquery.uls/images/clear.png') no-repeat scroll left center;
 }
+
+.uls-menu .uls-title {
+	/*
+	 * Hard coded margins to override
+	 * margin: 0 rule set on many websites
+ 	 */
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
